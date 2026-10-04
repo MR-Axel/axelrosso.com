@@ -23,6 +23,7 @@ Qué hace, en una línea por cosa:
 - **Automatizaciones y herramientas internas**: Automatizar es sacarle a una persona la parte del trabajo que ya hace siempre igual.
 - **Estrategia y asesoría**: La asesoría sirve cuando hay una decisión adelante y alguien la tiene que tomar esta semana.
 - **Producción generativa**: Producción generativa es hacer con modelos las piezas que antes se encargaban afuera: imágenes, video, demos de producto y la identidad.
+- **Registro verificable**: Un registro verificable deja la constancia de un hecho en una red pública, en un lugar donde ni la empresa que lo publicó puede editarlo después.
 
 ## Páginas
 
@@ -36,6 +37,7 @@ Qué hace, en una línea por cosa:
 - [Automatizaciones y herramientas internas](https://axelrosso.com/automatizaciones/): El proceso que hoy es una persona copiando entre dos pantallas, hecho software: automatizaciones con n8n o a medida, paneles internos y tableros que se abren cuando hay que decidir algo.
 - [Asesoría en IA, para fundadores y equipos](https://axelrosso.com/asesoria-ia/): Uno a uno con el fundador sobre lo que se está por decidir, o al lado del equipo en las decisiones de IA: diseño agéntico, alcance, y qué conviene no construir.
 - [Imágenes, video y marca hechos con IA](https://axelrosso.com/contenido-con-ia/): Imágenes para la landing y las campañas, video del prompt al clip terminado, demos grabadas de tu producto, y la identidad con las piezas que la sostienen.
+- [Registro verificable en Hedera, para constancias y activos reales](https://axelrosso.com/registro-verificable/): Constancias con hora cierta, trazabilidad y la herramienta para activos del mundo real sobre Hedera. Sin datos personales en la red y con agentes que lo operan. Para empresas y para personas con una idea.
 
 ## Cómo contactarlo
 

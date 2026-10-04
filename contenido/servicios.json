@@ -163,8 +163,8 @@
     "cierre": "Contame qué tendría que contestar y te paso el setup y el mensual.",
     "relacionados": [
       "agentes-de-ia",
-      "automatizaciones",
-      "asesoria-ia"
+      "registro-verificable",
+      "automatizaciones"
     ]
   },
   {
@@ -608,6 +608,99 @@
       "paginas-web",
       "agentes-de-ia",
       "producto-desde-cero"
+    ]
+  },
+  {
+    "ruta": "registro-verificable",
+    "tema": "registro",
+    "nombre": "Registro verificable",
+    "h1": "Registro verificable en Hedera, para constancias y activos reales",
+    "titulo": "Registro verificable en Hedera y activos reales · Axel Rosso",
+    "descripcion": "Constancias con hora cierta, trazabilidad y la herramienta para activos del mundo real sobre Hedera. Sin datos personales en la red y con agentes que lo operan. Para empresas y para personas con una idea.",
+    "respuesta": "Un registro verificable deja la constancia de un hecho en una red pública, en un lugar donde ni la empresa que lo publicó puede editarlo después.",
+    "intro": [
+      "En uno de mis productos, la única prueba de que aprobamos a un conductor era una fila en nuestra base. La escribimos nosotros y la podíamos reescribir, así que ante un reclamo no probaba nada.",
+      "Hoy esa aprobación queda publicada en Hedera, donde tampoco nosotros la podemos editar. Con el registro de cada proyecto en Unlaunched pasa lo mismo.",
+      "A la red no va ningún dato personal. Una cadena pública no borra, y eso choca con el derecho a que te borren."
+    ],
+    "incluye": [
+      {
+        "t": "Constancias con hora cierta",
+        "p": "Reservas, visitas, aprobaciones, entregas. Cada hecho queda registrado con su fecha, y cualquiera puede abrir el enlace y comprobarlo sin pedirle nada a nadie."
+      },
+      {
+        "t": "Privacidad desde el diseño",
+        "p": "A la red va un identificador aleatorio y nada que salga de una persona, ni siquiera hasheado: un DNI son ocho dígitos y se prueba entero en segundos. La tabla que lo une a cada persona queda en tu base."
+      },
+      {
+        "t": "Que no frene el negocio",
+        "p": "Publicar nunca bloquea una operación. Si la red está lenta, el registro queda pendiente y sale después, y la venta o la aprobación siguen."
+      },
+      {
+        "t": "Correcciones sin borrar",
+        "p": "Nada se edita ni se borra. Revocar o corregir es un mensaje nuevo, y el estado vigente es el último que se publicó."
+      },
+      {
+        "t": "Activos del mundo real",
+        "p": "A pedido, y para una empresa que ya esté habilitada para emitirlos. La habilitación es de ella y depende del país. Nosotros armamos la herramienta: el registro, el flujo y los agentes que lo gestionan."
+      }
+    ],
+    "para_quien": [
+      "Una inmobiliaria que quiere dejar constancia de reservas, visitas y tasaciones.",
+      "Una empresa del agro que necesita seguir lotes y certificados.",
+      "Una galería o un coleccionista que necesita certificar la procedencia de una obra.",
+      "Una plataforma que aprueba personas o proyectos y hoy es juez y parte de lo que aprueba.",
+      "Una empresa ya habilitada para emitir activos del mundo real y sin la herramienta para operarlos."
+    ],
+    "pasos": [
+      {
+        "t": "Qué hay que dejar asentado",
+        "p": "Una charla sobre qué hecho importa probar y ante quién. De ahí sale qué se registra y qué queda afuera."
+      },
+      {
+        "t": "El registro andando",
+        "p": "Conectado a tu sistema, con un tipo de hecho por vez y el enlace público de cada uno."
+      },
+      {
+        "t": "Los agentes lo operan",
+        "p": "Un agente se ocupa del flujo: quién aprueba, qué se revoca, qué se consulta. Y si querés, lo opero yo con el mensual."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es un registro verificable?",
+        "r": "Una constancia publicada en una red pública, con su fecha, que cualquiera puede abrir y comprobar. Nadie la puede editar después, tampoco quien la publicó."
+      },
+      {
+        "q": "¿Va información de mis clientes a la red?",
+        "r": "Ninguna. A la red va un identificador aleatorio y la tabla que lo une a cada persona queda en tu base. Una cadena pública no borra, así que un dato personal ahí sería una obligación imposible de cumplir."
+      },
+      {
+        "q": "¿Ustedes emiten los tokens?",
+        "r": "No emitimos nada. Emite una empresa que ya esté habilitada por el regulador de su país, y nosotros le armamos la herramienta. Si todavía no lo está, primero hay que resolver eso con un abogado."
+      },
+      {
+        "q": "¿Qué pasa si la red está caída?",
+        "r": "El negocio sigue. El registro queda pendiente y se publica cuando la red responde, sin frenar la venta ni la aprobación."
+      },
+      {
+        "q": "¿Se puede corregir un registro?",
+        "r": "Se corrige con otro mensaje. Nada se edita ni se borra, y el estado vigente es el último que se publicó."
+      },
+      {
+        "q": "¿Por qué Hedera?",
+        "r": "Porque es donde ya lo tengo andando. Si tu caso pide otra red, se evalúa."
+      },
+      {
+        "q": "¿Cuánto sale?",
+        "r": "Depende de qué hechos se registran y con qué sistemas se conecta. Un registro suelto y un flujo completo con agentes no son el mismo trabajo. Después de la primera charla te paso el número."
+      }
+    ],
+    "cierre": "Contame qué tendrías que poder probar y ante quién, y te digo si un registro lo resuelve.",
+    "relacionados": [
+      "agentes-como-servicio",
+      "automatizaciones",
+      "agentes-de-ia"
     ]
   }
 ]
