@@ -149,6 +149,9 @@ window.ES = {
   'Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut. Built to catch a machine that rebooted without leaving a trace.':
     'Panel en vivo de una PC con Windows: voltajes, temperaturas y carga, con un registro que sobrevive a un apagón. Lo armé para una máquina que se reiniciaba sin dejar rastro.',
 
+  'How long each task actually took, measured from Claude Code transcripts and git. A dashboard to quote new work from your own numbers.':
+    'Cuánto llevó de verdad cada tarea, medido desde las transcripciones de Claude Code y el git. Un tablero para cotizar trabajo nuevo con tus propios números.',
+
   /* --- activity --- */
   'Most of the code lives in private product repos, so the graph is the honest part of it.':
     'Casi todo el código vive en repos privados de producto, así que el gráfico es la parte honesta.',
