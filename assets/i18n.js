@@ -144,8 +144,8 @@ window.ES = {
   'Tools': 'Herramientas',
   'Built for my own machine first, then published. Free to download.':
     'Las armé primero para mi propia máquina y después las publiqué. Se descargan gratis.',
-  'Chrome extension to read Markdown files: collapsible outline, folder tree, and search across every file in the folder. Nothing leaves your machine.':
-    'Extensión de Chrome para leer archivos Markdown: índice plegable, árbol de carpetas y búsqueda en todos los archivos de la carpeta. Nada sale de tu máquina.',
+  'Chrome extension to read and edit Markdown files: outline, folder tree, search across the folder, and editing right on the formatted text. Nothing leaves your machine.':
+    'Extensión de Chrome para leer y editar archivos Markdown: índice, árbol de carpetas, búsqueda en toda la carpeta y edición sobre el texto ya formateado. Nada sale de tu máquina.',
   'Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut. Built to catch a machine that rebooted without leaving a trace.':
     'Panel en vivo de una PC con Windows: voltajes, temperaturas y carga, con un registro que sobrevive a un apagón. Lo armé para una máquina que se reiniciaba sin dejar rastro.',
 
