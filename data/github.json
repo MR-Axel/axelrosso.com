@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-06",
  "contributions": {
-  "total": 6743,
+  "total": 6755,
   "days": [
    {
     "d": "2025-10-05",
@@ -1469,28 +1469,18 @@
    },
    {
     "d": "2026-10-06",
-    "c": 0
+    "c": 12
    }
   ]
  },
  "repos": [
-  {
-   "name": "axelrosso.com",
-   "description": "Personal site. Live at mr-axel.github.io",
-   "url": "https://github.com/MR-Axel/axelrosso.com",
-   "language": "HTML",
-   "stars": 0,
-   "updated": "2026-10-06T08:57:57Z",
-   "archived": false,
-   "topics": []
-  },
   {
    "name": "md-tools",
    "description": "Chrome extension to read and edit Markdown files in the browser: outline, folder tree, folder-wide search, in-place editing, themes and custom CSS. No accounts, no network calls.",
    "url": "https://github.com/MR-Axel/md-tools",
    "language": "JavaScript",
    "stars": 0,
-   "updated": "2026-10-06T02:06:40Z",
+   "updated": "2026-10-06T20:05:22Z",
    "archived": false,
    "topics": [
     "chrome-extension",
@@ -1498,6 +1488,16 @@
     "markdown",
     "markdown-viewer"
    ]
+  },
+  {
+   "name": "axelrosso.com",
+   "description": "Personal site. Live at mr-axel.github.io",
+   "url": "https://github.com/MR-Axel/axelrosso.com",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-10-06T16:48:15Z",
+   "archived": false,
+   "topics": []
   },
   {
    "name": "MR-Axel.github.io",
