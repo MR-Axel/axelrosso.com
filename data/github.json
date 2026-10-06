@@ -1475,6 +1475,16 @@
  },
  "repos": [
   {
+   "name": "axelrosso.com",
+   "description": "Personal site. Live at mr-axel.github.io",
+   "url": "https://github.com/MR-Axel/axelrosso.com",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-10-06T08:57:57Z",
+   "archived": false,
+   "topics": []
+  },
+  {
    "name": "md-tools",
    "description": "Chrome extension to read and edit Markdown files in the browser: outline, folder tree, folder-wide search, in-place editing, themes and custom CSS. No accounts, no network calls.",
    "url": "https://github.com/MR-Axel/md-tools",
@@ -1488,16 +1498,6 @@
     "markdown",
     "markdown-viewer"
    ]
-  },
-  {
-   "name": "axelrosso.com",
-   "description": "Personal site. Live at mr-axel.github.io",
-   "url": "https://github.com/MR-Axel/axelrosso.com",
-   "language": "HTML",
-   "stars": 0,
-   "updated": "2026-10-06T01:17:50Z",
-   "archived": false,
-   "topics": []
   },
   {
    "name": "MR-Axel.github.io",
