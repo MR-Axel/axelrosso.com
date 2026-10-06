@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-05",
  "contributions": {
-  "total": 6651,
+  "total": 6741,
   "days": [
    {
     "d": "2025-10-05",
@@ -1389,11 +1389,11 @@
    },
    {
     "d": "2026-09-16",
-    "c": 85
+    "c": 101
    },
    {
     "d": "2026-09-17",
-    "c": 88
+    "c": 93
    },
    {
     "d": "2026-09-18",
@@ -1461,32 +1461,37 @@
    },
    {
     "d": "2026-10-04",
-    "c": 57
+    "c": 58
    },
    {
     "d": "2026-10-05",
-    "c": 3
+    "c": 71
    }
   ]
  },
  "repos": [
   {
+   "name": "md-tools",
+   "description": "Chrome extension to read and edit Markdown files in the browser: outline, folder tree, folder-wide search, in-place editing, themes and custom CSS. No accounts, no network calls.",
+   "url": "https://github.com/MR-Axel/md-tools",
+   "language": "JavaScript",
+   "stars": 0,
+   "updated": "2026-10-06T00:55:39Z",
+   "archived": false,
+   "topics": [
+    "chrome-extension",
+    "manifest-v3",
+    "markdown",
+    "markdown-viewer"
+   ]
+  },
+  {
    "name": "MR-Axel.github.io",
-   "description": "Personal site. Live at mr-axel.github.io",
+   "description": "What I publish on GitHub: tools and agent skills. Live at mr-axel.github.io",
    "url": "https://github.com/MR-Axel/MR-Axel.github.io",
    "language": "HTML",
    "stars": 0,
-   "updated": "2026-10-05T00:54:44Z",
-   "archived": false,
-   "topics": []
-  },
-  {
-   "name": "codi.com.ar",
-   "description": null,
-   "url": "https://github.com/codisoftware/codi.com.ar",
-   "language": "HTML",
-   "stars": 0,
-   "updated": "2026-09-21T01:33:44Z",
+   "updated": "2026-10-05T22:22:27Z",
    "archived": false,
    "topics": []
   },
@@ -1496,27 +1501,9 @@
    "url": "https://github.com/MR-Axel/MR-Axel",
    "language": null,
    "stars": 0,
-   "updated": "2026-08-29T19:28:17Z",
+   "updated": "2026-10-05T22:22:25Z",
    "archived": false,
    "topics": []
-  },
-  {
-   "name": "monitor-sistema",
-   "description": "Panel en vivo del estado de una PC con Windows, con registro que sobrevive a un apag\u00f3n. Pensado para diagnosticar reinicios espont\u00e1neos que no dejan rastro en el Visor de eventos.",
-   "url": "https://github.com/MR-Axel/monitor-sistema",
-   "language": "HTML",
-   "stars": 2,
-   "updated": "2026-08-28T06:45:36Z",
-   "archived": false,
-   "topics": [
-    "dashboard",
-    "hardware-monitoring",
-    "libre-hardware-monitor",
-    "monitoring",
-    "nodejs",
-    "system-monitor",
-    "windows"
-   ]
   },
   {
    "name": "skills",
@@ -1524,7 +1511,7 @@
    "url": "https://github.com/MR-Axel/skills",
    "language": null,
    "stars": 1,
-   "updated": "2026-08-05T22:49:45Z",
+   "updated": "2026-10-05T22:22:23Z",
    "archived": false,
    "topics": [
     "claude-code",
@@ -1538,6 +1525,58 @@
     "espanol",
     "productivity"
    ]
+  },
+  {
+   "name": "monitor-sistema",
+   "description": "Panel en vivo del estado de una PC con Windows, con registro que sobrevive a un apag\u00f3n. Pensado para diagnosticar reinicios espont\u00e1neos que no dejan rastro en el Visor de eventos.",
+   "url": "https://github.com/MR-Axel/monitor-sistema",
+   "language": "HTML",
+   "stars": 2,
+   "updated": "2026-10-05T22:22:20Z",
+   "archived": false,
+   "topics": [
+    "dashboard",
+    "hardware-monitoring",
+    "libre-hardware-monitor",
+    "monitoring",
+    "nodejs",
+    "system-monitor",
+    "windows"
+   ]
+  },
+  {
+   "name": "tiempos-reales",
+   "description": "Cu\u00e1nto tiempo llev\u00f3 de verdad cada tarea, medido desde las transcripciones de Claude Code y el git. Tablero con cotizador para estimar con datos propios.",
+   "url": "https://github.com/MR-Axel/tiempos-reales",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-10-05T22:22:18Z",
+   "archived": false,
+   "topics": [
+    "claude-code",
+    "estimation",
+    "time-tracking"
+   ]
+  },
+  {
+   "name": "axelrosso.com",
+   "description": "Personal site. Live at mr-axel.github.io",
+   "url": "https://github.com/MR-Axel/axelrosso.com",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-10-05T21:40:12Z",
+   "archived": false,
+   "topics": []
+  },
+  {
+   "name": "codi.com.ar",
+   "description": null,
+   "url": "https://github.com/codisoftware/codi.com.ar",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-09-21T01:33:44Z",
+   "archived": false,
+   "topics": []
   },
   {
    "name": "Python",
