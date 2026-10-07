@@ -140,17 +140,15 @@ window.ES = {
   'The 14 open ones, on GitHub<span class="arrow" aria-hidden="true">↗</span>':
     'Los 14 abiertos, en GitHub<span class="arrow" aria-hidden="true">↗</span>',
 
-  /* --- tools --- */
-  'Tools': 'Herramientas',
-  'Built for my own machine first, then published. Free to download.':
-    'Las armé primero para mi propia máquina y después las publiqué. Se descargan gratis.',
-  'Chrome extension to read and edit Markdown files: outline, folder tree, search across the folder, and editing right on the formatted text. Nothing leaves your machine.':
-    'Extensión de Chrome para leer y editar archivos Markdown: índice, árbol de carpetas, búsqueda en toda la carpeta y edición sobre el texto ya formateado. Nada sale de tu máquina.',
-  'Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut. Built to catch a machine that rebooted without leaving a trace.':
-    'Panel en vivo de una PC con Windows: voltajes, temperaturas y carga, con un registro que sobrevive a un apagón. Lo armé para una máquina que se reiniciaba sin dejar rastro.',
+  /* --- tools: viven adentro de "Also built", en tarjetas chicas --- */
+  'Tool': 'Herramienta',
+  'Chrome extension to read and edit Markdown files. Nothing leaves your machine.':
+    'Extensión de Chrome para leer y editar archivos Markdown. Nada sale de tu máquina.',
+  'Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut.':
+    'Panel en vivo de una PC con Windows: voltajes, temperaturas y carga, con un registro que sobrevive a un apagón.',
 
-  'How long each task actually took, measured from Claude Code transcripts and git. A dashboard to quote new work from your own numbers.':
-    'Cuánto llevó de verdad cada tarea, medido desde las transcripciones de Claude Code y el git. Un tablero para cotizar trabajo nuevo con tus propios números.',
+  'How long each task actually took, measured from Claude Code transcripts and git.':
+    'Cuánto llevó de verdad cada tarea, medido desde las transcripciones de Claude Code y el git.',
 
   /* --- activity --- */
   'Most of the code lives in private product repos, so the graph is the honest part of it.':
@@ -196,8 +194,8 @@ window.ES = {
     'Otros',
   'Point of sale, stock and the fiscal side wired together, for a monotributista who today invoices by hand.':
     'Punto de venta, stock y la parte fiscal atados entre sí, para un monotributista que hoy factura a mano.',
-  'Earlier builds and one on pause. One is still up and the rest are off.':
-    'Cosas anteriores y una en pausa. Una sigue en pie y el resto está apagado.',
+  'Tools I made for my own machine and then published, next to earlier builds and one on pause.':
+    'Herramientas que armé para mi propia máquina y después publiqué, junto a cosas anteriores y una en pausa.',
 
   /* --- voz, revision completa --- */
   'Tell me what you need':

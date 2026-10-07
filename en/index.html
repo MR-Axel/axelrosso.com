@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../assets/style.css?v=95">
+<link rel="stylesheet" href="../assets/style.css?v=96">
 <link rel="stylesheet" href="../assets/doodle.css?v=4">
 <script>
 /* Runs before the body parses, so the page never flashes the wrong theme or
@@ -257,7 +257,6 @@
       <a href="#experience">Path</a>
       <a href="#services">Services</a>
       <a href="#skills">Agent Skills</a>
-      <a href="#tools">Tools</a>
       <a href="#activity">Activity</a>
     </nav>
 
@@ -442,72 +441,79 @@
       <div class="also">
         <div class="also__head reveal">
           <h3>Also built</h3>
-          <p>Earlier builds and one on pause. One is still up and the rest are off.</p>
+          <p>Tools I made for my own machine and then published, next to earlier builds and one on pause.</p>
         </div>
 
-        <ul class="sidelist">
-          <li class="sideitem reveal">
-            <span class="sideitem__idx">01</span>
-            <span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/comovenimos.png" alt="" loading="lazy" decoding="async"></span>
-            <div class="sideitem__body">
-              <h4><a href="https://comovenimos.com" target="_blank" rel="noopener">ComoVenimos<span class="arrow" aria-hidden="true">↗</span></a></h4>
-              <p>A community for tech and startup people, with a blog and paid memberships.</p>
-            </div>
-            <span class="pill pill--live">Live</span>
-          </li>
+        <!-- Una sola grilla: las herramientas publicadas y los productos
+             anteriores. Primero lo que esta en pie. "Live" solo va en lo que
+             tiene una URL publica que responde. -->
+        <div class="also-grid">
+          <a class="skill-card also-card reveal" href="https://sharpmd.app" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l4 5 4-5v10"/><path d="M17 7v9"/><path d="m14 13 3 3 3-3"/></svg></span><span class="estado" data-t>Live</span></span>
+            <h4>Sharpmd<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>Chrome extension to read and edit Markdown files. Nothing leaves your machine.</p>
+            <span class="also-card__type" data-t>Tool</span>
+          </a>
 
-          <li class="sideitem reveal">
-            <span class="sideitem__idx">02</span>
-            <span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/fiteando.png" alt="" loading="lazy" decoding="async"></span>
-            <div class="sideitem__body">
-              <h4><a href="https://fiteando.com" target="_blank" rel="noopener">Fiteando<span class="arrow" aria-hidden="true">↗</span></a></h4>
-              <p>A social app for finding a training partner at your gym, at your hour.</p>
-            </div>
-            <span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span>
-          </li>
+          <a class="skill-card also-card reveal" href="https://github.com/MR-Axel/monitor-sistema" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M6.5 11h2.5l1.5-3 2.5 5 1.5-2h3"/></svg></span><span class="estado" data-t>Live</span></span>
+            <h4>monitor-sistema<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut.</p>
+            <span class="also-card__type" data-t>Tool</span>
+          </a>
 
-          <li class="sideitem reveal">
-            <span class="sideitem__idx">03</span>
-            <span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/booktranslated.png" alt="" loading="lazy" decoding="async"></span>
-            <div class="sideitem__body">
-              <h4><a href="https://booktranslated.com" target="_blank" rel="noopener">Book Translated<span class="arrow" aria-hidden="true">↗</span></a></h4>
-              <p>Translates and summarises whole books the same day, priced by word count.</p>
-            </div>
-            <span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span>
-          </li>
+          <a class="skill-card also-card reveal" href="https://github.com/MR-Axel/tiempos-reales" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7.5"/><path d="M12 9v4l2.5 2.5"/><path d="M9.5 3h5"/></svg></span><span class="estado" data-t>Live</span></span>
+            <h4>tiempos-reales<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>How long each task actually took, measured from Claude Code transcripts and git.</p>
+            <span class="also-card__type" data-t>Tool</span>
+          </a>
 
-          <li class="sideitem reveal">
-            <span class="sideitem__idx">04</span>
-            <span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/valmidor.png" alt="" loading="lazy" decoding="async"></span>
-            <div class="sideitem__body">
-              <h4><a href="https://valmidor.com" target="_blank" rel="noopener">Valmidor<span class="arrow" aria-hidden="true">↗</span></a></h4>
-              <p>Daily gamified challenges with rankings and a WhatsApp loop.</p>
-            </div>
-            <span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span>
-          </li>
-                  <li class="sideitem reveal">
-            <span class="sideitem__idx">05</span>
-            <span class="sideitem__logo sideitem__logo--letter" aria-hidden="true">CP</span>
-            <div class="sideitem__body">
-              <h4>ContablePosnet</h4>
-              <p>Point of sale, stock and the fiscal side wired together, for a monotributista who today invoices by hand.</p>
-            </div>
-            <span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span>
-          </li>
+          <a class="skill-card also-card reveal" href="https://comovenimos.com" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/comovenimos.png" alt="" loading="lazy" decoding="async"></span><span class="estado" data-t>Live</span></span>
+            <h4>ComoVenimos<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>A community for tech and startup people, with a blog and paid memberships.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </a>
+
+          <a class="skill-card also-card reveal" href="https://fiteando.com" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/fiteando.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <h4>Fiteando<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>A social app for finding a training partner at your gym, at your hour.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </a>
+
+          <a class="skill-card also-card reveal" href="https://booktranslated.com" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/booktranslated.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <h4>Book Translated<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>Translates and summarises whole books the same day, priced by word count.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </a>
+
+          <a class="skill-card also-card reveal" href="https://valmidor.com" target="_blank" rel="noopener">
+            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/valmidor.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <h4>Valmidor<span class="arrow" aria-hidden="true">↗</span></h4>
+            <p>Daily gamified challenges with rankings and a WhatsApp loop.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </a>
+
+          <article class="skill-card skill-card--own also-card reveal">
+            <span class="also-card__top"><span class="sideitem__logo sideitem__logo--letter" aria-hidden="true">CP</span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <h4>ContablePosnet</h4>
+            <p>Point of sale, stock and the fiscal side wired together, for a monotributista who today invoices by hand.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </article>
 
           <!-- ⚠️ SIN ENLACE, y no es un olvido: el dominio se perdió y hoy sirve
                la página de un registrador. Un enlace roto molesta; uno que lleva
                al lander de otro parece que el producto terminó siendo eso. -->
-          <li class="sideitem reveal">
-            <span class="sideitem__idx">06</span>
-            <span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/pedimelo.png" alt="" loading="lazy" decoding="async"></span>
-            <div class="sideitem__body">
-              <h4>Pedimelo</h4>
-              <p>AI agents for small businesses on WhatsApp, web and voice, wired to the data they already had.</p>
-            </div>
-            <span class="pill pill--off" title="Paused"><span class="pill__txt">Paused</span></span>
-          </li>
-</ul>
+          <article class="skill-card skill-card--own also-card reveal">
+            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="../assets/logos/pedimelo.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Paused"><span class="pill__txt">Paused</span></span></span>
+            <h4>Pedimelo</h4>
+            <p>AI agents for small businesses on WhatsApp, web and voice, wired to the data they already had.</p>
+            <span class="also-card__type" data-t>Product</span>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -783,36 +789,7 @@
     </div>
   </section>
 
-  <section id="tools" class="section">
-    <div class="wrap">
-      <div class="section__head reveal">
-        <h2>Tools</h2>
-        <p>Built for my own machine first, then published. Free to download.</p>
-      </div>
-
-      <div class="skills-grid">
-        <a class="skill-card reveal" href="https://sharpmd.app" target="_blank" rel="noopener">
-          <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l4 5 4-5v10"/><path d="M17 7v9"/><path d="m14 13 3 3 3-3"/></svg></span>
-          <h3>Sharpmd<span class="arrow" aria-hidden="true">↗</span></h3>
-          <p>Chrome extension to read and edit Markdown files: outline, folder tree, search across the folder, and editing right on the formatted text. Nothing leaves your machine.</p>
-        </a>
-
-        <a class="skill-card reveal" href="https://github.com/MR-Axel/monitor-sistema" target="_blank" rel="noopener">
-          <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M6.5 11h2.5l1.5-3 2.5 5 1.5-2h3"/></svg></span>
-          <h3>monitor-sistema<span class="arrow" aria-hidden="true">↗</span></h3>
-          <p>Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut. Built to catch a machine that rebooted without leaving a trace.</p>
-        </a>
-
-        <a class="skill-card reveal" href="https://github.com/MR-Axel/tiempos-reales" target="_blank" rel="noopener">
-          <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7.5"/><path d="M12 9v4l2.5 2.5"/><path d="M9.5 3h5"/></svg></span>
-          <h3>tiempos-reales<span class="arrow" aria-hidden="true">↗</span></h3>
-          <p>How long each task actually took, measured from Claude Code transcripts and git. A dashboard to quote new work from your own numbers.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="activity" class="section section--alt">
+  <section id="activity" class="section">
     <div class="wrap">
       <div class="section__head reveal">
         <h2>Activity</h2>
@@ -955,7 +932,7 @@
 </footer>
 
 <script src="../assets/medir.js?v=2" defer></script>
-<script src="../assets/i18n.js?v=68"></script>
+<script src="../assets/i18n.js?v=69"></script>
 <script src="../assets/app.js?v=43"></script>
 <script src="../assets/interact.js?v=3" defer></script>
 <script src="../assets/form.js?v=6" defer></script>

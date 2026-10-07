@@ -709,6 +709,43 @@ section[id] { scroll-margin-top: 82px; }
 .also__head h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .also__head p { color: var(--muted); font-size: 0.94rem; }
 
+/* Tarjetas chicas: las herramientas y los productos anteriores en una sola
+   grilla de cuatro. Son `.skill-card` y de ahi heredan el borde, el hover, la
+   inclinacion, el foco que sigue al puntero y la entrada; aca solo se achican.
+   Los selectores llevan `.also-grid` adelante porque `.skill-card` se define
+   mas abajo con la misma especificidad y ganaria. */
+.also-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
+  margin-top: 24px; perspective: 1400px;
+}
+@media (max-width: 980px) { .also-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .also-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.also-grid .also-card { padding: 16px; gap: 8px; border-radius: 12px; }
+.also-card__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 2px; }
+.also-grid .skill-icon { width: 30px; height: 30px; border-radius: 8px; }
+.also-grid .skill-icon svg { width: 16px; height: 16px; }
+.also-grid .also-card h4 { font-size: 0.95rem; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.also-grid .also-card h4 .arrow { font-size: 0.72em; color: var(--muted); }
+.also-grid a.also-card:hover h4, .also-grid a.also-card:hover h4 .arrow { color: var(--accent-ink); }
+.also-grid .also-card p { color: var(--muted); font-size: 0.82rem; line-height: 1.5; margin: 0; }
+.also-card__type {
+  margin-top: auto; padding-top: 6px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted); font-weight: 500;
+}
+/* En pie: un punto y la palabra. El verde es el mismo de la pastilla Live de
+   las tarjetas grandes, sin la caja, que a este tamano pesaba mas que el nombre. */
+.estado {
+  display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-ink);
+}
+.estado::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%; flex: none;
+  background: var(--accent-ink); box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
 .sidelist {
   list-style: none; margin: 24px 0 0; padding: 0;
   background: var(--surface); border: 1px solid var(--line);
