@@ -138,7 +138,18 @@
      el ingles guardado, quien abre `/agentes-de-ia/` termina en la portada sin
      la pagina que fue a buscar. Con `indexOf('/en')` cualquier ruta que empiece
      con esas dos letras se tomaria por la version en ingles. */
-  if (ruta !== '/en/' && esPortada && lang === 'en') {
+  /* 🔴 A UN RASTREADOR NO SE LO REDIRIGE NUNCA. Bing Webmaster dijo de la
+     portada "Not indexed as this page is a redirect": el servidor contesta 200,
+     pero el renderizador de Bing corre en horario de Estados Unidos, el script
+     lo toma por norteamericano y lo manda a `/en/`. Para un buscador eso es una
+     redireccion, y una portada que redirige no se indexa. Googlebot rinde igual
+     y esta expuesto a lo mismo.
+
+     Un rastreador siempre ve la version en castellano de `/`, que es la
+     canonica, y a `/en/` llega por el `hreflang`, que es para lo que existe. */
+  var esRastreador = /bot|crawl|spider|slurp|bingpreview|inspectiontool|lighthouse|headless|adsbot|mediapartners|facebookexternalhit|embedly/i
+    .test(navigator.userAgent || '');
+  if (ruta !== '/en/' && esPortada && lang === 'en' && !esRastreador) {
     window.location.replace('/en/' + window.location.search + window.location.hash);
     return;
   }
