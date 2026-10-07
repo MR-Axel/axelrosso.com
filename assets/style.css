@@ -604,6 +604,18 @@ section[id] { scroll-margin-top: 82px; }
   border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px;
 }
 
+/* 🔴 LA UNICA ETIQUETA QUE LLEVA A ALGUN LADO. Las demas describen; esta es un
+   enlace a la tienda, asi que tiene que leerse distinta o nadie la toca.
+   Adentro de la tarjeta el clic ya se maneja solo: el delegado de `app.js` deja
+   pasar todo lo que sea un `a`, asi que no abre el sitio por encima. */
+.tags .tag--app { border-color: var(--accent-line); background: var(--accent-soft); padding: 0; }
+.tags .tag--app a {
+  display: inline-block; padding: 2px 8px; color: var(--accent-ink);
+  text-decoration: none; transition: color 0.2s ease;
+}
+.tags .tag--app a:hover { color: var(--text); }
+.tags .tag--app .arrow { margin-left: 3px; }
+
 /* ---------- mascots ---------- */
 
 /* the hornero is dametrabajo's, the carpincho is Nuchus's, and both face into
