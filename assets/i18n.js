@@ -142,8 +142,8 @@ window.ES = {
 
   /* --- tools: viven adentro de "Also built", en tarjetas chicas --- */
   'Tool': 'Herramienta',
-  'Chrome extension to read and edit Markdown files. Nothing leaves your machine.':
-    'Extensión de Chrome para leer y editar archivos Markdown. Nada sale de tu máquina.',
+  'Markdown editor in the browser, as a web app and a Chrome extension. Cloud notes are optional.':
+    'Editor de Markdown en el navegador, como app web y extensión de Chrome. Las notas en la nube son opcionales.',
   'Live panel for a Windows PC: voltages, temperatures and load, with a log that survives a power cut.':
     'Panel en vivo de una PC con Windows: voltajes, temperaturas y carga, con un registro que sobrevive a un apagón.',
 
