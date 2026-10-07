@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=96">
+<link rel="stylesheet" href="assets/style.css?v=97">
 <link rel="stylesheet" href="assets/doodle.css?v=4">
 <script>
 /* Runs before the body parses, so the page never flashes the wrong theme or
@@ -441,9 +441,8 @@
           <p>Herramientas que armé para mi propia máquina y después publiqué, junto a cosas anteriores y una en pausa.</p>
         </div>
 
-        <!-- Una sola grilla: las herramientas publicadas y los productos
-             anteriores. Primero lo que esta en pie. "Live" solo va en lo que
-             tiene una URL publica que responde. -->
+        <!-- Dos niveles: arriba lo que esta en pie, abajo lo anterior. "Live"
+             solo va en lo que tiene una URL publica que responde. -->
         <div class="also-grid">
           <a class="skill-card also-card reveal" href="https://sharpmd.app" target="_blank" rel="noopener">
             <span class="also-card__top"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l4 5 4-5v10"/><path d="M17 7v9"/><path d="m14 13 3 3 3-3"/></svg></span><span class="estado" data-t>Live</span></span>
@@ -467,37 +466,42 @@
           </a>
 
           <a class="skill-card also-card reveal" href="https://comovenimos.com" target="_blank" rel="noopener">
-            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="assets/logos/comovenimos.png" alt="" loading="lazy" decoding="async"></span><span class="estado" data-t>Live</span></span>
+            <span class="also-card__top"><span class="also-card__logo" aria-hidden="true"><img src="assets/logos/comovenimos.png" alt="" loading="lazy" decoding="async"></span><span class="estado" data-t>Live</span></span>
             <h4>ComoVenimos<span class="arrow" aria-hidden="true">↗</span></h4>
             <p>Una comunidad de gente de tech y startups, con blog y membresías pagas.</p>
             <span class="also-card__type" data-t>Producto</span>
           </a>
 
+        </div>
+
+        <!-- Segundo nivel: lo apagado o en pausa, en tarjetas mas bajas. Cinco
+             en una fila en escritorio y filas tipo lista cuando no entran. -->
+        <div class="also-grid also-grid--past">
           <a class="skill-card also-card reveal" href="https://fiteando.com" target="_blank" rel="noopener">
-            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="assets/logos/fiteando.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <span class="also-card__top"><span class="also-card__logo" aria-hidden="true"><img src="assets/logos/fiteando.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
             <h4>Fiteando<span class="arrow" aria-hidden="true">↗</span></h4>
-            <p>Una app social para encontrar con quién entrenar, en tu gimnasio y a tu hora.</p>
+            <p>App social para entrenar acompañado.</p>
             <span class="also-card__type" data-t>Producto</span>
           </a>
 
           <a class="skill-card also-card reveal" href="https://booktranslated.com" target="_blank" rel="noopener">
-            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="assets/logos/booktranslated.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <span class="also-card__top"><span class="also-card__logo" aria-hidden="true"><img src="assets/logos/booktranslated.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
             <h4>Book Translated<span class="arrow" aria-hidden="true">↗</span></h4>
-            <p>Traduce y resume libros enteros el mismo día, con precio por cantidad de palabras.</p>
+            <p>Traduce y resume libros enteros.</p>
             <span class="also-card__type" data-t>Producto</span>
           </a>
 
           <a class="skill-card also-card reveal" href="https://valmidor.com" target="_blank" rel="noopener">
-            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="assets/logos/valmidor.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <span class="also-card__top"><span class="also-card__logo" aria-hidden="true"><img src="assets/logos/valmidor.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
             <h4>Valmidor<span class="arrow" aria-hidden="true">↗</span></h4>
-            <p>Desafíos diarios gamificados con rankings y un loop de WhatsApp.</p>
+            <p>Desafíos diarios gamificados con rankings.</p>
             <span class="also-card__type" data-t>Producto</span>
           </a>
 
           <article class="skill-card skill-card--own also-card reveal">
-            <span class="also-card__top"><span class="sideitem__logo sideitem__logo--letter" aria-hidden="true">CP</span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
+            <span class="also-card__top"><span class="also-card__logo also-card__logo--letter" aria-hidden="true">CP</span><span class="pill pill--off" title="Off"><span class="pill__txt">Off</span></span></span>
             <h4>ContablePosnet</h4>
-            <p>Punto de venta, stock y la parte fiscal atados entre sí, para un monotributista que hoy factura a mano.</p>
+            <p>Punto de venta y stock atados a la parte fiscal.</p>
             <span class="also-card__type" data-t>Producto</span>
           </article>
 
@@ -505,9 +509,9 @@
                la página de un registrador. Un enlace roto molesta; uno que lleva
                al lander de otro parece que el producto terminó siendo eso. -->
           <article class="skill-card skill-card--own also-card reveal">
-            <span class="also-card__top"><span class="sideitem__logo" aria-hidden="true"><img src="assets/logos/pedimelo.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Paused"><span class="pill__txt">En pausa</span></span></span>
+            <span class="also-card__top"><span class="also-card__logo" aria-hidden="true"><img src="assets/logos/pedimelo.png" alt="" loading="lazy" decoding="async"></span><span class="pill pill--off" title="Paused"><span class="pill__txt">En pausa</span></span></span>
             <h4>Pedimelo</h4>
-            <p>Agentes de IA para negocios chicos en WhatsApp, web y voz, conectados a los datos que ya tenían.</p>
+            <p>Agentes de IA para negocios chicos.</p>
             <span class="also-card__type" data-t>Producto</span>
           </article>
         </div>
@@ -933,7 +937,7 @@
 </footer>
 
 <script src="assets/medir.js?v=2" defer></script>
-<script src="assets/i18n.js?v=69"></script>
+<script src="assets/i18n.js?v=70"></script>
 <script src="assets/app.js?v=43"></script>
 <script src="assets/interact.js?v=3" defer></script>
 <script src="assets/form.js?v=6" defer></script>

@@ -734,6 +734,44 @@ section[id] { scroll-margin-top: 82px; }
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--muted); font-weight: 500;
 }
+.also-card__logo {
+  width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
+  background: var(--surface-hi); border: 1px solid var(--line);
+  display: grid; place-items: center; padding: 5px;
+}
+.also-card__logo img { width: 100%; height: 100%; object-fit: contain; }
+.also-card__logo--letter { padding: 0; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+
+/* Segundo nivel: lo apagado o en pausa. Cinco en una fila, mas bajas y con la
+   descripcion a dos renglones, para que se lea como "lo anterior" sin titulo. */
+.also-grid--past { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 12px; }
+.also-grid--past .also-card { padding: 13px 14px; gap: 6px; }
+.also-grid--past .also-card__logo { width: 26px; height: 26px; border-radius: 7px; padding: 4px; }
+.also-grid--past .also-card__logo--letter { padding: 0; font-size: 11px; }
+.also-grid--past .also-card h4 { font-size: 0.88rem; }
+.also-grid--past .also-card p {
+  font-size: 0.78rem; line-height: 1.45;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
+}
+.also-grid--past .also-card__type { padding-top: 4px; }
+
+/* Cuando cinco no entran, pasan a filas bajas tipo lista: logo, nombre con su
+   renglon, tipo y estado. `display: contents` en la cabecera suelta el logo y
+   la pastilla para que la tarjeta los ubique como celdas propias. */
+@media (max-width: 1040px) {
+  .also-grid--past { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .also-grid--past .also-card {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto;
+    column-gap: 12px; row-gap: 1px; align-items: center; padding: 10px 14px;
+  }
+  .also-grid--past .also-card__top { display: contents; }
+  .also-grid--past .also-card__logo { grid-column: 1; grid-row: 1 / span 2; }
+  .also-grid--past .also-card h4 { grid-column: 2; grid-row: 1; }
+  .also-grid--past .also-card__type { grid-column: 3; grid-row: 1 / span 2; margin: 0; padding: 0; }
+  .also-grid--past .also-card .pill { grid-column: 4; grid-row: 1 / span 2; }
+  .also-grid--past .also-card p { grid-column: 2; grid-row: 2; }
+}
+
 /* En pie: un punto y la palabra. El verde es el mismo de la pastilla Live de
    las tarjetas grandes, sin la caja, que a este tamano pesaba mas que el nombre. */
 .estado {

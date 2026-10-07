@@ -46,8 +46,8 @@ window.ES = {
   'Specs, roadmaps, research and audits for PMs, founders and small product teams. Product management built on Claude.':
     'Specs, roadmaps, research y auditorías para PMs, fundadores y equipos chicos. Product management sobre Claude.',
 
-  'AI agents for small businesses on WhatsApp, web and voice, wired to the data they already had.':
-    'Agentes de IA para negocios chicos en WhatsApp, web y voz, conectados a los datos que ya tenían.',
+  'AI agents for small businesses.':
+    'Agentes de IA para negocios chicos.',
 
   /* tags */
   'Job search': 'Búsqueda laboral',
@@ -72,14 +72,14 @@ window.ES = {
   'A community for tech and startup people, with a blog and paid memberships.':
     'Una comunidad de gente de tech y startups, con blog y membresías pagas.',
 
-  'A social app for finding a training partner at your gym, at your hour.':
-    'Una app social para encontrar con quién entrenar, en tu gimnasio y a tu hora.',
+  'A social app for finding a training partner.':
+    'App social para entrenar acompañado.',
 
-  'Translates and summarises whole books the same day, priced by word count.':
-    'Traduce y resume libros enteros el mismo día, con precio por cantidad de palabras.',
+  'Translates and summarises whole books.':
+    'Traduce y resume libros enteros.',
 
-  'Daily gamified challenges with rankings and a WhatsApp loop.':
-    'Desafíos diarios gamificados con rankings y un loop de WhatsApp.',
+  'Daily gamified challenges with rankings.':
+    'Desafíos diarios gamificados con rankings.',
 
   /* --- craft --- */
 
@@ -192,8 +192,8 @@ window.ES = {
     'MBA en Tecnología e Innovación',
   'Others':
     'Otros',
-  'Point of sale, stock and the fiscal side wired together, for a monotributista who today invoices by hand.':
-    'Punto de venta, stock y la parte fiscal atados entre sí, para un monotributista que hoy factura a mano.',
+  'Point of sale and stock wired to the fiscal side.':
+    'Punto de venta y stock atados a la parte fiscal.',
   'Tools I made for my own machine and then published, next to earlier builds and one on pause.':
     'Herramientas que armé para mi propia máquina y después publiqué, junto a cosas anteriores y una en pausa.',
 
