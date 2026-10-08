@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-08",
  "contributions": {
-  "total": 7055,
+  "total": 7069,
   "days": [
    {
     "d": "2025-10-05",
@@ -1473,22 +1473,32 @@
    },
    {
     "d": "2026-10-07",
-    "c": 165
+    "c": 166
    },
    {
     "d": "2026-10-08",
-    "c": 73
+    "c": 86
    }
   ]
  },
  "repos": [
   {
-   "name": "MR-Axel",
-   "description": "Profile README",
-   "url": "https://github.com/MR-Axel/MR-Axel",
-   "language": null,
+   "name": "axelrosso.com",
+   "description": "Personal site. Live at mr-axel.github.io",
+   "url": "https://github.com/MR-Axel/axelrosso.com",
+   "language": "HTML",
    "stars": 0,
-   "updated": "2026-10-08T23:06:48Z",
+   "updated": "2026-10-08T23:50:58Z",
+   "archived": false,
+   "topics": []
+  },
+  {
+   "name": "codi.com.ar",
+   "description": null,
+   "url": "https://github.com/codisoftware/codi.com.ar",
+   "language": "HTML",
+   "stars": 0,
+   "updated": "2026-10-08T23:43:26Z",
    "archived": false,
    "topics": []
   },
@@ -1498,7 +1508,7 @@
    "url": "https://github.com/SharpMD/sharpmd",
    "language": "JavaScript",
    "stars": 0,
-   "updated": "2026-10-08T22:43:27Z",
+   "updated": "2026-10-08T23:24:44Z",
    "archived": false,
    "topics": [
     "chrome-extension",
@@ -1508,12 +1518,12 @@
    ]
   },
   {
-   "name": "axelrosso.com",
-   "description": "Personal site. Live at mr-axel.github.io",
-   "url": "https://github.com/MR-Axel/axelrosso.com",
-   "language": "HTML",
+   "name": "MR-Axel",
+   "description": "Profile README",
+   "url": "https://github.com/MR-Axel/MR-Axel",
+   "language": null,
    "stars": 0,
-   "updated": "2026-10-08T19:56:32Z",
+   "updated": "2026-10-08T23:06:48Z",
    "archived": false,
    "topics": []
   },
@@ -1579,16 +1589,6 @@
     "system-monitor",
     "windows"
    ]
-  },
-  {
-   "name": "codi.com.ar",
-   "description": null,
-   "url": "https://github.com/codisoftware/codi.com.ar",
-   "language": "HTML",
-   "stars": 0,
-   "updated": "2026-09-21T01:33:44Z",
-   "archived": false,
-   "topics": []
   },
   {
    "name": "Python",
