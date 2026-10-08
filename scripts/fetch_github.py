@@ -19,6 +19,14 @@ import urllib.request
 USER = os.environ.get("GH_USER", "MR-Axel")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "github.json"
+# Public repos that live in an organization and still belong in the list, as "owner/name".
+EXTRA = [x for x in os.environ.get("GH_EXTRA_REPOS", "SharpMD/sharpmd").split(",") if "/" in x]
+
+REPO_FIELDS = """
+        name description url stargazerCount pushedAt isArchived isPrivate
+        primaryLanguage { name }
+        repositoryTopics(first: 10) { nodes { topic { name } } }
+"""
 
 QUERY = """
 query($login: String!) {
@@ -31,14 +39,13 @@ query($login: String!) {
     }
     repositories(first: 100, privacy: PUBLIC, isFork: false,
                  orderBy: {field: PUSHED_AT, direction: DESC}) {
-      nodes {
-        name description url stargazerCount pushedAt isArchived
-        primaryLanguage { name }
-        repositoryTopics(first: 10) { nodes { topic { name } } }
-      }
+      nodes {""" + REPO_FIELDS + """      }
     }
   }
-}
+""" + "".join(
+    '  extra%d: repository(owner: "%s", name: "%s") {%s  }\n' % ((i,) + tuple(x.strip().split("/", 1)) + (REPO_FIELDS,))
+    for i, x in enumerate(EXTRA)
+) + """}
 """
 
 
@@ -59,7 +66,16 @@ def graphql():
         payload = json.load(resp)
     if "errors" in payload:
         sys.exit("GitHub API error: " + json.dumps(payload["errors"]))
-    return payload["data"]["user"]
+    user = payload["data"]["user"]
+    # The repos of an organization go in with the rest, newest push first.
+    extra = [payload["data"].get("extra%d" % i) for i in range(len(EXTRA))]
+    nodes = user["repositories"]["nodes"] + [r for r in extra if r and not r["isPrivate"] and not r["isArchived"]]
+    seen = set()
+    user["repositories"]["nodes"] = [
+        r for r in sorted(nodes, key=lambda r: r["pushedAt"] or "", reverse=True)
+        if not (r["url"] in seen or seen.add(r["url"]))
+    ]
+    return user
 
 
 
